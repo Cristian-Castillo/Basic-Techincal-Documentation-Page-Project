@@ -1,22 +1,48 @@
+body{
+  font-family: Arial,sans-serif;
+}
+
 #navbar{
+  position:relative;
+  top:0px;
+  left:0px;
   display:flex;
   flex-direction:column;
   position:fixed;
   line-height:50px;
+  text-align:center;
   border-style:solid;
   border-width:1px;
-  text-align:center;
+  border-color:black;
+  border-bottom:none !important;
+  border-right: 1px solid black;
+  height:1000px;
+}
+
+#headerTitle{
+  font-size:2em;
+  margin:10px;
+  
 }
 
 .nav-link{
-  text-decoration:none;
+  border-style:none;
   border-style:solid;
-  border-color:black;
-  border-width:1px;
+  border-width:.1px;
+  text-decoration:none;
   color:black;
+  padding:5px;
+  border-bottom:none !important;
+  border-right:none;
 }
 
 .main-section{
-  margin-left:270px;
+  margin-left:300px;
   padding-top:30px;
 }
+
+#sectionIndent{
+  margin-left:40px;
+  
+}
+
