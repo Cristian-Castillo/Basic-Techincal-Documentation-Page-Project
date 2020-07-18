@@ -13,6 +13,10 @@ body{
   text-decoration:none !important;
 }
 
+a:hover{
+  background-color:#c4ecfb;
+}
+
 #navbar{
   position:relative;
   top:0px;
