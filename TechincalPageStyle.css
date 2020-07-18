@@ -1,5 +1,16 @@
 body{
-  font-family: Arial,sans-serif;
+    color: black;
+    background-color:#8fe1ff;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+#headerTitle{
+  text-decoration:underline;
+}
+
+.newHeader{
+  text-decoration:none !important;
 }
 
 #navbar{
@@ -16,13 +27,12 @@ body{
   border-color:black;
   border-bottom:none !important;
   border-right: 1px solid black;
-  height:1000px;
+  height:100%;
 }
 
 #headerTitle{
   font-size:2em;
   margin:10px;
-  
 }
 
 .nav-link{
@@ -40,9 +50,100 @@ body{
   margin-left:300px;
   padding-top:30px;
 }
-
 #sectionIndent{
   margin-left:40px;
   
 }
 
+li{
+  margin-bottom:22px;
+}
+
+code{
+  display:flex;
+  padding:8.5px;
+  background-color:#eee;
+  border-radius:3.5px;
+}
+
+#References{
+  margin-bottom:130px;
+}
+/* responsive smaller device */
+@media(max-width: 815px){
+  
+  .newHeader{
+    color:black;
+    display:block;
+    text-decoration:none !important;
+    background-color:#8fe1ff;
+    align-self:center;
+    border-bottom:2.5 solid black !important;
+    top:0px;
+    left:0px;
+  }
+  
+  .nav-link{
+    border-left:none;
+    width:100%;
+    padding:0;
+    top:10px;
+    left:0px;
+    height:8.5vh;
+    display:block;
+    flex-direction:column;
+ 
+  }
+
+a{
+  text-align:left;
+  display:block;
+  flex-direction:column;
+  margin-top:10px;
+ }
+
+  #navbar{
+
+    top: 0px;
+    padding: 0;
+    margin:0px;
+    width: 100%;
+    max-height:275px;
+    border: none;
+    border-bottom: 2.5px solid;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom:2.5px solid black !important;
+    position:absolute;
+  }
+
+  .main-section{
+    postion:relative;
+    top:300px;
+    margin-left:5px;
+    display:block;
+  }
+  
+  #innerBody{
+    position:relative;
+    top:280px;
+    display:block;
+    
+  }
+}
+/* Cell Phone Screen */
+@media(max-width: 400px) {
+   .main-section{
+    postion:relative;
+    top:100px;
+     display:block;
+ 
+  }
+  
+  #innerBody{
+    top:5px;
+    display:block;
+    
+  }
+}
